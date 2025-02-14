@@ -1,0 +1,126 @@
+.textTransparent{
+    text-shadow: 
+    -2px -2px 0 white,  
+     2px -2px 0 white,  
+    -2px  2px 0 white,  
+     2px  2px 0 white; 
+}
+.overlay{
+    background:linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 8px;
+    height: 500px;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0)
+      );
+}
+    
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    background-image: url('/fut-port.webp');
+    background-size: cover;
+}
+
+.div9 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    background-image: url('/nba.webp');
+    background-size: cover;
+}
+
+.div10 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 6;
+    background-image: url('/nfl-image.webp');
+    background-size: cover;
+}
+
+.div13 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 6;
+    grid-row-start: 6;
+    background-image: url('/ufc-image.webp');
+    background-size: cover;
+}
+
+.div14 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 6;
+    grid-row-start: 1;
+    background-image: url('/dota.webp');
+    background-size: cover;
+}
+
+.div15 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-image: url('/mlb.webp');
+    background-size: cover;
+}
+
+
+.divAnimationLeft{
+    opacity: 0;
+    animation: fadeInLeft 1.5s ease-out forwards;
+}
+.divAnimationRight{
+    opacity: 0;
+    animation: fadeInRight 1.5s ease-out forwards;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Para que no se vean antes de la animación */
+    animation: fadehidden 1.5s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+ 
+@keyframes fadehidden{
+    from {
+      opacity: 1;
+   
+    }
+    to {
+      opacity: 0;
+
+    }
+}
+ 
