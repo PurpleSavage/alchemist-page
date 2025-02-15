@@ -30,26 +30,26 @@ export default function Sports() {
     }, []);
 
     return (
-        <section className="space-y-16">
-            <h2 className="text-5xl font-bold text-center">Apuesta en deportes como</h2>
-            <div className="w-2/3 mx-auto relative">
+        <section className="space-y-16 overflow-hidden">
+            <h2 className="text-3xl px-2 md:text-5xl font-bold text-center">Apuesta en deportes como</h2>
+            <div className="w-full md:w-2/3 mx-auto relative overflow-hidden">
                 <div className={`${style.parent}`}>
-                    <div className={`${style.div7}`}>7</div>
-                    <div className={`${style.div9}`}>9</div>
-                    <div className={`${style.div10}`}>10</div>
-                    <div className={`${style.div13}`}>13</div>
-                    <div className={`${style.div14}`}>14</div>
-                    <div className={`${style.div15}`}>15</div>
+                    <div className={`${style.div7}`}></div>
+                    <div className={`${style.div9}`}></div>
+                    <div className={`${style.div10}`}></div>
+                    <div className={`${style.div13}`}></div>
+                    <div className={`${style.div14}`}></div>
+                    <div className={`${style.div15}`}></div>
                 </div>
                 <div
                     ref={contRef}
                     className={`absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center ${style.overlay}`}
                 >
-                    <h3 className={`text-8xl text-end w-2/5 text-black ${style.textTransparent} ${isVisible ? style.divAnimationLeft : style.hidden}`}>FUTBOL</h3>
-                    <h3 className={`text-8xl text-black w-2/5 ${style.textTransparent} ${isVisible ? style.divAnimationRight : style.hidden}`}>NBA</h3>
-                    <h3 className={`text-8xl text-end w-2/5 text-black ${style.textTransparent} ${isVisible ? style.divAnimationLeft : style.hidden}`}>NFL</h3>
-                    <h3 className={`text-8xl text-black w-2/5 ${style.textTransparent} ${isVisible ? style.divAnimationRight : style.hidden}`}>UFC</h3>
-                    <h3 className={`text-8xl text-black w-2/5 text-start ${style.textTransparent} ${isVisible ? style.divAnimationLeft : style.hidden}`}>MLB</h3>
+                    <h3 className={`text-5xl md:text-8xl text-end w-2/5 text-black ${style.textTransparent} ${isVisible ? style.divAnimationLeft : style.hidden}`}>FUTBOL</h3>
+                    <h3 className={`text-5xl md:text-8xl text-black w-2/5 ${style.textTransparent} ${isVisible ? style.divAnimationRight : style.hidden}`}>NBA</h3>
+                    <h3 className={`text-5xl md:text-8xl text-end w-2/5 text-black ${style.textTransparent} ${isVisible ? style.divAnimationLeft : style.hidden}`}>NFL</h3>
+                    <h3 className={`text-5xl md:text-8xl text-black w-2/5 ${style.textTransparent} ${isVisible ? style.divAnimationRight : style.hidden}`}>UFC</h3>
+                    <h3 className={`text-5xl md:text-8xl text-black w-2/5 text-start ${style.textTransparent} ${isVisible ? style.divAnimationLeft : style.hidden}`}>MLB</h3>
                 </div>
             </div>
         </section>

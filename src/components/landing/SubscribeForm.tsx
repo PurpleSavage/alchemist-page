@@ -24,7 +24,7 @@ export default function SubscribeForm() {
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
     };
   return (
-    <form className={`${style.form}  border-2 border-slate-500/50 p-4 w-2/5 space-y-4 rounded-md`} onSubmit={sendMessage}>
+    <form className={`${style.form}  border-2 border-slate-500/50 p-4 w-5/6 md:w-2/5 space-y-4 rounded-md`} onSubmit={sendMessage}>
                 <div className='w-full justify-center flex'>
                     <Image
                         width={80}
