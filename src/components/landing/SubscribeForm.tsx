@@ -2,7 +2,7 @@
 import Image from "next/image";
 import style from '../../css/landing/subscribe.module.css'
 import { FormEvent, useState } from "react";
-
+import { Validators } from "@/utils/validator";
 export default function SubscribeForm() {
     const [nombre,setNombre]=useState("")
     const [email,setEmail]=useState("")
@@ -13,6 +13,10 @@ export default function SubscribeForm() {
         e.preventDefault()
         if([nombre,email,phone].includes('')){
             setError("hay campos incompletos")
+            return
+        }
+        if(Validators.email.test(email)){
+            setError("No es un email válido")
             return
         }
         const phoneNumber = "51979797894"; 
@@ -46,7 +50,7 @@ export default function SubscribeForm() {
                 <div className='space-y-2'>
                     <label htmlFor="" className='block'>Email</label>
                     <input 
-                        type="text" 
+                        type="email" 
                         placeholder='Email' 
                         className='bg-transparent border border-slate-500/50 h-10 w-full px-2 rounded-md'
                         onChange={(e)=>setEmail(e.target.value)}
