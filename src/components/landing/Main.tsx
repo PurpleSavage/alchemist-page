@@ -11,9 +11,10 @@ export default function Main() {
             <div className='h-full border-dashed border-b border-slate-400/50 flex md:flex-row flex-col
              items-center  justify-center  w-full' > 
                 <div className='h-full hidden md:flex items-center justify-center '>
-                    <h1 className={`rotate-180 tracking-widest text-7xl ${style.fadeText}  ${style.degraded} italic font-semibold  -rotate-90 uppercase`}
+                    <h1 className={` tracking-widest text-7xl ${style.fadeText}  ${style.degraded} italic font-semibold  -rotate-90 uppercase`}
                     >Alchemist</h1>
                 </div>
+
                 <div className='block md:hidden space-y-8 mb-10'>
                     <div className=' items-center justify-center '>
                         <h1 className={`py-2 tracking-widest border-dashed text-5xl border-y border-slate-400/50 md:text-7xl ${style.fadeText}  ${style.degraded} italic font-semibold uppercase`}
