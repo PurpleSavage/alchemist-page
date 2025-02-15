@@ -17,7 +17,7 @@ export default function SubscribeForm() {
         }
         const phoneNumber = "51979797894"; 
         const message = encodeURIComponent(
-            `Hola, mi nombre quisiera unirme al grupo, vengo de la web de 
+            `Hola, quisiera unirme al grupo, vengo de la web de 
             Alchemist.\n\nEstos son mis datos:\nEmail: ${email}\nNombre: ${nombre}\nCelular: ${phone}`
         );
           
