@@ -60,7 +60,7 @@ export default function SubscribeForm() {
                     <label htmlFor="" className='block'>Número de teléfono</label>
                     <input 
                         type="text" 
-                        placeholder='933256487' 
+                        placeholder='ingresa tu número' 
                         className='bg-transparent border border-slate-500/50 h-10 w-full px-2 rounded-md' 
                         onChange={(e)=>setPhone(e.target.value)}
                     />
