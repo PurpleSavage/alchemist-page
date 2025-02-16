@@ -15,7 +15,7 @@ export default function SubscribeForm() {
             setError("hay campos incompletos")
             return
         }
-        if(Validators.email.test(email)){
+        if(!Validators.email.test(email)){
             setError("No es un email válido")
             return
         }
